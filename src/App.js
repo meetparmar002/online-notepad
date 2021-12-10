@@ -87,7 +87,7 @@ class App extends Component{
       console.log(data);
       if(q!==''&&q!==null){
         this.setState({
-          notes:this.state.notes.filter(n=>n.title.includes(q))
+          notes:this.state.notes.filter(n=>n.title.toLowerCase().includes(q.toLowerCase()))
         })
       }
       else{
