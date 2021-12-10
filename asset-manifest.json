@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/online-notepad/static/css/main.5591ddff.chunk.css",
+    "main.js": "/online-notepad/static/js/main.b8234ea4.chunk.js",
+    "main.js.map": "/online-notepad/static/js/main.b8234ea4.chunk.js.map",
+    "runtime-main.js": "/online-notepad/static/js/runtime-main.3b54867c.js",
+    "runtime-main.js.map": "/online-notepad/static/js/runtime-main.3b54867c.js.map",
+    "static/css/2.f83b9687.chunk.css": "/online-notepad/static/css/2.f83b9687.chunk.css",
+    "static/js/2.bf18ce01.chunk.js": "/online-notepad/static/js/2.bf18ce01.chunk.js",
+    "static/js/2.bf18ce01.chunk.js.map": "/online-notepad/static/js/2.bf18ce01.chunk.js.map",
+    "index.html": "/online-notepad/index.html",
+    "static/css/2.f83b9687.chunk.css.map": "/online-notepad/static/css/2.f83b9687.chunk.css.map",
+    "static/css/main.5591ddff.chunk.css.map": "/online-notepad/static/css/main.5591ddff.chunk.css.map",
+    "static/js/2.bf18ce01.chunk.js.LICENSE.txt": "/online-notepad/static/js/2.bf18ce01.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3b54867c.js",
+    "static/css/2.f83b9687.chunk.css",
+    "static/js/2.bf18ce01.chunk.js",
+    "static/css/main.5591ddff.chunk.css",
+    "static/js/main.b8234ea4.chunk.js"
+  ]
+}
