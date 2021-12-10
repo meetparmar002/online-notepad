@@ -84,7 +84,6 @@ class App extends Component{
   searchNote=(q)=>{
     const getNotes=async()=>{
       const data=await getDocs(notesCollectionRef)
-      console.log(data);
       if(q!==''&&q!==null){
         this.setState({
           notes:this.state.notes.filter(n=>n.title.toLowerCase().includes(q.toLowerCase()))
@@ -127,7 +126,6 @@ class App extends Component{
       this.setState({
         notes:data.docs.map(doc=>({...doc.data(),id:doc.id}))
       })
-      // console.log(data.docs.map(doc=>({...doc.data(),id:doc.id})));
     }
     getNotes()  
   }
