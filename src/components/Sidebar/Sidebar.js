@@ -40,6 +40,7 @@ class Sidebar extends Component {
         }
     }
 
+    searchNote=(query)=>this.props.searchNote(query)
     selectNoteHandler=(note,index)=>this.props.selectNote(note,index)
     deleteNoteHandler=(note)=>this.props.deleteNote(note)
     render() {
@@ -79,6 +80,12 @@ class Sidebar extends Component {
                 >{!this.state.addingNote
                 ?<AddBoxIcon/>:<CancelIcon/>}</Button>
                 {newNoteInput}
+                <input 
+                    className={classes.newNoteInput}
+                    type='text'
+                    placeholder="Search your notes..."
+                    onKeyUp={(e)=>this.searchNote(e.target.value)}
+                />
                 <List>
                     {noteList}
                 </List>

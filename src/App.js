@@ -80,6 +80,24 @@ class App extends Component{
       notes:currNotes,
     })
   }
+
+  searchNote=(q)=>{
+    const getNotes=async()=>{
+      const data=await getDocs(notesCollectionRef)
+      console.log(data);
+      if(q!==''&&q!==null){
+        this.setState({
+          notes:this.state.notes.filter(n=>n.title.includes(q))
+        })
+      }
+      else{
+        this.setState({
+          notes:data.docs.map(doc=>({...doc.data(),id:doc.id})) 
+        })
+      }
+    }
+    getNotes()
+  }
   render(){
     return(
       <div className="app-container">
@@ -88,7 +106,8 @@ class App extends Component{
           selectedNoteIndex={this.state.selectedNoteIndex}
           selectNote={this.selectNote}
           deleteNote={this.deleteNote}
-          createNote={this.createNote}>
+          createNote={this.createNote}
+          searchNote={this.searchNote}>
         </Sidebar>
         {
           this.state.selectedNote?<Editor
